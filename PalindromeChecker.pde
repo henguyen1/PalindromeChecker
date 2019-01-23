@@ -16,11 +16,9 @@ public void setup()
 }
 public boolean palindrome(String word)
 {
+  word = word.toLowerCase();
+  word = removeNonLetters(word);
   if(word.equals(reverse(word)))
-  {
-    return true;
-  }
-  else if(word.equals(removeNonLetters(word)))
   {
     return true;
   }
